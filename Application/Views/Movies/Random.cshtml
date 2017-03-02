@@ -1,0 +1,26 @@
+﻿@model MVCappli_rest.View_Models.RandomMovieViewModel
+
+
+
+@{
+    ViewBag.Title = "Random";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{var className = Model.Customers.Count > 5 ? "Popular": null;
+}
+@if (Model.Customers.Count == 0)
+{
+    <p>No one has rented this movie before</p>
+}
+else{
+    <p>@className</p>
+<ul>
+    @foreach (var cust in Model.Customers)
+    {
+        <li>@cust.Name, @cust.Id</li>
+    }
+</ul>
+}
+
+

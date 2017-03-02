@@ -1,0 +1,23 @@
+﻿@model MVCappli_rest.Models.Movies
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.Name</h2>
+
+<ul>
+    <li>
+        Genre: @Model.Genre.genre
+    </li>
+    <li>
+        Release Date: @Model.ReleaseDate.Date.ToLongDateString()
+    </li>
+    <li>
+        Date Added: @Model.DateAdded.Date.ToLongDateString()
+    </li>
+    <li>
+        Number in Stock: @Model.NumberInStock
+    </li>
+</ul>
+
