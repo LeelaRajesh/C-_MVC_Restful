@@ -87,3 +87,4 @@ D:\study\MVCappli_rest\MVCappli_rest\obj\Debug\MVCappli_rest.Migrations.SeedUser
 D:\study\MVCappli_rest\MVCappli_rest\obj\Debug\MVCappli_rest.Migrations.AddDrivingLicenseToApplicationUser.resources
 D:\study\MVCappli_rest\MVCappli_rest\obj\Debug\MVCappli_rest.Migrations.AddPhoneToApplicationUser.resources
 D:\study\MVCappli_rest\MVCappli_rest\obj\Debug\MVCappli_rest.Migrations.AddPhoneToApplicationUser1.resources
+D:\study\MVCappli_rest\MVCappli_rest\obj\Debug\MVCappli_rest.Migrations.AddRentalClassModel.resources
