@@ -42,8 +42,8 @@ namespace MVCappli_rest.Controllers.Api
                 rental.Movie = mov;
                 rental.DateRented = DateTime.Now.Date;
                 _context.Rentals.Add(rental);
+                _context.SaveChanges();
             }
-            _context.SaveChanges();
             return Ok();
         }
 
