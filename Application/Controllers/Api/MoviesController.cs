@@ -23,12 +23,20 @@ namespace MVCappli_rest.Controllers.Api
             _context = new ApplicationDbContext();
         }
         //GET api/movies
-        public IEnumerable<MoviesDto> GetMovies()
+        public IHttpActionResult GetMovies(string query=null)
         {
-            return _context.Movies.
-                Include(c => c.Genre)
+            var moviesQuery= _context.Movies.
+                Include(c => c.Genre);
+
+            if(!string.IsNullOrWhiteSpace(query)){
+                moviesQuery = moviesQuery.Where(m => m.Name.Contains(query) 
+                    && m.NumberAvailable>0);
+            };
+
+            var movieDtos = moviesQuery
                 .ToList()
                 .Select(Mapper.Map<Movies, MoviesDto>);
+            return Ok(movieDtos);
         }
 
         [Authorize(Roles = RoleName.CanManageMovies)]

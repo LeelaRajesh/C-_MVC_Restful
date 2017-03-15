@@ -37,7 +37,7 @@ namespace MVCappli_rest.Controllers.Api
 
             foreach (var mov in movies){
                 if (mov.NumberAvailable == 0)
-                    return BadRequest(mov.Id + " is not available");
+                    return BadRequest(mov.Name + " is not available");
                 mov.NumberAvailable--;
                 rental.Movie = mov;
                 rental.DateRented = DateTime.Now.Date;
