@@ -14,7 +14,9 @@ namespace MVCappli_rest
                         "~/Scripts/bootbox.js",
                         "~/Scripts/respond.js",
                         "~/Scripts/datatables/jquery.datatables.js",
-                        "~/Scripts/datatables/datatables.bootstrap.js"));
+                        "~/Scripts/datatables/datatables.bootstrap.js",
+                        "~/scripts/typeahead.bundle.js"
+                        ));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
@@ -29,7 +31,9 @@ namespace MVCappli_rest
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap-sandstone.css",
                       "~/Content/datatables/css/datatables.bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+                      "~/Content/typeahead.css"
+                      ));
         }
     }
 }
