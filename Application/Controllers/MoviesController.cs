@@ -87,7 +87,11 @@ namespace MVCappli_rest.Controllers
                 return View("MoviesForm", viewmodel);
             }
             if(viewModel.Id == 0)
+            {
+                viewModel.NumberAvailable = viewModel.NumberInStock;
                 _context.Movies.Add(viewModel);
+            }
+                
             else
             {
                 var MovieInDB = _context.Movies.Single(m => m.Id == viewModel.Id);

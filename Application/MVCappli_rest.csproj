@@ -295,6 +295,10 @@
     <Compile Include="Migrations\201703041931508_AddRentalClassModel.Designer.cs">
       <DependentUpon>201703041931508_AddRentalClassModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703042033023_AddingNumberAvailableToMovies.cs" />
+    <Compile Include="Migrations\201703042033023_AddingNumberAvailableToMovies.Designer.cs">
+      <DependentUpon>201703042033023_AddingNumberAvailableToMovies.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -511,7 +515,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -644,6 +650,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703041931508_AddRentalClassModel.resx">
       <DependentUpon>201703041931508_AddRentalClassModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703042033023_AddingNumberAvailableToMovies.resx">
+      <DependentUpon>201703042033023_AddingNumberAvailableToMovies.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

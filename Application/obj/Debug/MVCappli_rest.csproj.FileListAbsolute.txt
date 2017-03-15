@@ -88,3 +88,4 @@ D:\study\MVCappli_rest\MVCappli_rest\obj\Debug\MVCappli_rest.Migrations.AddDrivi
 D:\study\MVCappli_rest\MVCappli_rest\obj\Debug\MVCappli_rest.Migrations.AddPhoneToApplicationUser.resources
 D:\study\MVCappli_rest\MVCappli_rest\obj\Debug\MVCappli_rest.Migrations.AddPhoneToApplicationUser1.resources
 D:\study\MVCappli_rest\MVCappli_rest\obj\Debug\MVCappli_rest.Migrations.AddRentalClassModel.resources
+D:\study\MVCappli_rest\MVCappli_rest\obj\Debug\MVCappli_rest.Migrations.AddingNumberAvailableToMovies.resources
